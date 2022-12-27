@@ -12,146 +12,14 @@ html {
 }
 
 #particles-js {
-  min-height: 90vh;
+  min-height: 100vh;
   width: 100%;
-  background-color: #1e1e1e;
   position: relative;
-}
-
-nav {
-  min-height: 10vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  width: 90%;
-  margin: auto;
-}
-
-.navbar .nav-info {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  color: white;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-}
-
-.navbar .nav-info h1 {
-  font-weight: 400;
-  font-size: 1.5rem;
-  cursor: pointer;
-}
-
-.navbar .logo-cont {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.navbar .logo {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 10rem;
-  width: 10rem;
-}
-
-.navbar img {
-  height: 100%;
-  width: 100%;
-}
-
-.navbar .nav-login {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-}
-
-.nav-btn {
-  background: white;
-  border: 0;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
-  border-radius: 2.5rem;
-  cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
-  scale: 1;
-  z-index: 2;
-  position: absolute;
-}
-
-.nav-btn:hover {
-  scale: 1.2;
-  z-index: 2;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 main {
@@ -163,12 +31,17 @@ main {
 }
 
 .main-head h2 {
-  background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(#e7e7e7, #394a5a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 6rem;
   font-weight: 300;
   text-align: center;
+  font-weight: 800;
+}
+
+.main-head .syncro-cont img {
+  width: 80%;
 }
 
 .main-head .register-cont {
@@ -190,27 +63,10 @@ main {
 .main-head .register-btn {
   background: white;
   border: 0;
-  font-size: 1.5rem;
-  padding: 1rem 2rem;
+  font-size: 1.8rem;
+  padding: 1.2rem 2.2rem;
   border-radius: 2.5rem;
   cursor: pointer;
-  -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease;
   scale: 1;
-}
-
-.swipe1 {
-  background: #a76ee7;
-  z-index: 5;
-}
-
-.swipe2 {
-  background: #567ce4;
-  z-index: 4;
-}
-
-.swipe3 {
-  background: #ff8b5d;
-  z-index: 3;
 }
 /*# sourceMappingURL=style.css.map */

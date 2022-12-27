@@ -19,82 +19,85 @@ html {
 
 
 #particles-js {
-    min-height: 90vh;
+    min-height: 100vh;
     width: 100%;
-    background-color: #1e1e1e;
     position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) ,url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
- nav {
-    min-height: 10vh;
-    @include flex(center, center, row);
- }
+//  nav {
+//     min-height: 10vh;
+//     @include flex(center, center, row);
+//  }
 
  
-.navbar {
-    @include flex(center, center, row);
-    width: 90%;
-    margin: auto;
+// .navbar {
+//     @include flex(center, center, row);
+//     width: 90%;
+//     margin: auto;
 
    
     
-    .nav-info {
-      @include flex(space-between, center, row);
-       color: white;
-       flex-wrap: wrap;
-       flex: 1 1 auto;
+//     .nav-info {
+//       @include flex(space-between, center, row);
+//        color: white;
+//        flex-wrap: wrap;
+//        flex: 1 1 auto;
        
-//        background: -webkit-linear-gradient(white, #38495a);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
+// //        background: -webkit-linear-gradient(white, #38495a);
+// //   -webkit-background-clip: text;
+// //   -webkit-text-fill-color: transparent;
 
 
-       h1 {
-        font-weight: 400;
-        font-size: 1.5rem;
-        cursor: pointer;
-       }
-    }
+//        h1 {
+//         font-weight: 400;
+//         font-size: 1.5rem;
+//         cursor: pointer;
+//        }
+//     }
 
-.logo-cont {
-    flex: 1 1 auto;
-    @include flex(flex-start, center, row);
-}
-    .logo {
-        justify-content: center;
-        align-items: center;
-        height: 10rem;
-        width: 10rem;
-      }
-    img {
-        height: 100%;
-        width: 100%;
-    }
+// .logo-cont {
+//     flex: 1 1 auto;
+//     @include flex(flex-start, center, row);
+// }
+//     .logo {
+//         justify-content: center;
+//         align-items: center;
+//         height: 10rem;
+//         width: 10rem;
+//       }
+//     img {
+//         height: 100%;
+//         width: 100%;
+//     }
 
-    .nav-login {
-        flex: 1 1 auto;
-        @include flex(flex-end, center, row)
+//     .nav-login {
+//         flex: 1 1 auto;
+//         @include flex(flex-end, center, row)
 
-    }
-}
+//     }
+// }
 
 
 
-.nav-btn {
-    background: white;
-    border: 0;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    border-radius: 2.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    scale: 1;
-    z-index: 2;
-    position: absolute;
-}
-.nav-btn:hover {
-    scale: 1.2;
-    z-index: 2;
-}
+// .nav-btn {
+//     background: white;
+//     border: 0;
+//     font-size: 1.5rem;
+//     padding: 1rem 2rem;
+//     border-radius: 2.5rem;
+//     cursor: pointer;
+//     transition: all 0.3s ease;
+//     scale: 1;
+//     z-index: 2;
+//     position: absolute;
+// }
+// .nav-btn:hover {
+//     scale: 1.2;
+//     z-index: 2;
+// }
 
 main {
     position: absolute;
@@ -105,41 +108,31 @@ main {
 .main-head {
 
     h2 {
-  background: -webkit-linear-gradient(white, #38495a);
+  background: -webkit-linear-gradient(rgb(231, 231, 231), #394a5a);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; 
   font-size: 6rem;
   font-weight: 300;
   text-align: center;
+  font-weight: 800;
     }
-
+.syncro-cont {
+    img {
+        width: 80%;
+    }
+}
 .register-cont {
     @include flex(center, center, row)
 }
     .register-btn {
         background: white;
         border: 0;
-        font-size: 1.5rem;
-        padding: 1rem 2rem;
+        font-size: 1.8rem;
+        padding: 1.2rem 2.2rem;
         border-radius: 2.5rem;
         cursor: pointer;
-        transition: all 0.3s ease;
         scale: 1;
-
     }
     
 }
 
-
-.swipe1 {
-    background:rgb(167, 110, 231);
-    z-index: 5;
-  }
-  .swipe2 {
-    background: rgb(86, 124, 228);
-    z-index: 4;
-  }
-  .swipe3 {
-    background: rgb(255, 139, 93);
-    z-index: 3;
-  }

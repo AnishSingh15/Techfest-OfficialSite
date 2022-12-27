@@ -132,56 +132,49 @@ particlesJS('particles-js',
 
 );
 
-//barba
 
-// const logo = document.querySelector("#logo");
-//  const home = document.querySelector("#ho");
-//   barba.init({
-//     views: [
-//       {
-//         namespace: "home",
-//         beforeEnter(){
-//           home.href = "./index.html"
-//         }
-//       },
-//       {
-//         namespace: "teams",
-//         beforeEnter(){
-//           home.href = "../index.html"
-//         }
-//       }
-//     ],
-//     transitions: [
-//       {
-//         leave({ current, next}) {
-//           let done = this.async();
-//           ////Animation
-//           const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
 
-//           tl.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0 });
-//           tl.fromTo(
-//             ".swipe",
-//             0.75,
-//             { x: "-100%" },
-//             { x: "0%", onComplete: done },
-//             "-=0.2"
-//           );
-//         },
-//         enter({ current, next}) {
-//           let done = this.async();
-//           ////Animation
-//           const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
-//           tl.fromTo(
-//             ".swipe",
-//             1,
-//             { x: "0%" },
+  // barba.init({
+  //   views: [
+  //     {
+  //       namespace: "main",
+  //     },
+  //     {
+  //       namespace: "home",
+  //     }
+  //   ],
+  //   transitions: [
+  //     {
+  //       leave({ current, next}) {
+  //         let done = this.async();
+  //         ////Animation
+  //         const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
+
+  //         tl.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0 });
+  //         tl.fromTo(
+  //           ".swipe",
+  //           0.75,
+  //           { x: "-100%" },
+  //           { x: "0%", onComplete: done },
+  //           "-=0.2"
+  //         );
+  //       },
+  //       enter({ current, next}) {
+  //         let done = this.async();
+  //         ////Animation
+  //         const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
+  //         tl.fromTo(
+  //           ".swipe",
+  //           1,
+  //           { x: "0%" },
       
-//             { x: "100%", stagger: 0.23, onComplete: done }
-//           );
-//           tl.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1 });
-//         }
-//       }
-//     ]
+  //           { x: "100%", stagger: 0.23, onComplete: done }
+  //         );
+  //         tl.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1 });
+  //       }
+  //     }
+  //   ]
     
     
-//     })
+  //   })
+
