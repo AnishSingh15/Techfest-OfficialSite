@@ -82,6 +82,13 @@
   .menu p{
     color:#ccc;
     left: 70%;
+    cursor: pointer;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+  .menu p:hover{
+    text-decoration: underline;
+    color: #b5bc67;
+    transition: all 0.9s ease;
   }
 
   .button1 {
