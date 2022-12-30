@@ -364,7 +364,9 @@ section .overlay {
     line-height: 2rem;
     font-family: 'Poppins', sans-serif;
     padding-bottom: 70px;
-    width: 135vh;
+    padding-right: 0;
+    width: 50vh;
+    
     }
 
     .footer {
