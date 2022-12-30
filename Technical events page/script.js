@@ -9,11 +9,11 @@ $(document).ready(function () {
 		$(".overlay, body").addClass("loaded");
 		setTimeout(function () {
 			$(".overlay").css({ display: "none" });
-		}, 2000);
+		}, 20000);
 	});
 
 	// Will remove overlay after 1min for users cannnot load properly.
 	setTimeout(function () {
 		$(".overlay, body").addClass("loaded");
-	}, 60000);
+	}, 5000);
 });
