@@ -454,6 +454,7 @@ section .overlay {
         margin-top: 17em;
     }
     
+    
     .card-container {
         transform: translateY(22em);
         color: rgb(253, 253, 253);
