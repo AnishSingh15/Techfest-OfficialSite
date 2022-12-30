@@ -292,7 +292,7 @@ section .overlay {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-    background: rgb(65, 255, 1);
+    background: bisque;
     border-radius: 10px;
 }
 
