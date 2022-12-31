@@ -31,6 +31,7 @@ nav {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+            z-index: 1;
   }
   
   .navbar {
@@ -78,6 +79,15 @@ nav {
     font-size: 1.2rem;
     cursor: pointer;
     font-family: 'Poppins';
+
+  }
+
+  .navbar .nav-info h1:hover{
+    font-weight: 600;
+    color: yellowgreen;
+    scale: 1.2;
+    transition: all 0.5s ease;
+    
   }
   
   .navbar .logo-cont {
@@ -173,6 +183,7 @@ section .overlay {
     align-items: center;
     background-size: cover;
     background: rgba(0, 0, 0, 0.844);
+    z-index: 1;
 
 
 }
