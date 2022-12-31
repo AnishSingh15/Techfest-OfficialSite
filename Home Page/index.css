@@ -472,7 +472,12 @@ section .overlay {
         margin: 0;
         overflow-x: hidden;
     }
-
+    section .overlay{
+        background-size: cover;
+    }
+    #particles-js{
+        background-size: cover;
+    }
     #particles-js .logo img {
         width: 85%;
         margin-bottom: 4%;
