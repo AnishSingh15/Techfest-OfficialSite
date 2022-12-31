@@ -19,7 +19,7 @@ body {
 }
 nav{
     height: 5rem;
-    width: 108vw;
+    width: 100vw;
     background-color: rgba(10, 0, 15, 0.892);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -473,15 +473,17 @@ section .overlay {
         overflow-x: hidden;
     }
     section .overlay{
-        width: 108%;
+        width: 100%;
     }
     #particles-js{
-        width: 108.2%;
+        width: 100%;
+        background: linear-gradient(rgb(10, 0, 15),rgb(10,0,19))
     }
     #particles-js .logo img {
-        width: 85%;
+        width: 100%;
+        scale: 0.85;
         margin-bottom: 4%;
-        transform: translate(4vh, 20vh);
+        transform: translate(1.5vh, 20vh);
     }
 
     .regbtn button {
