@@ -19,7 +19,7 @@ body {
 }
 nav{
     height: 5rem;
-    width: 100vw;
+    width: 108vw;
     background-color: rgba(10, 0, 15, 0.892);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -473,10 +473,10 @@ section .overlay {
         overflow-x: hidden;
     }
     section .overlay{
-        background-size: cover;
+        width: 108%;
     }
     #particles-js{
-        background-size: cover;
+        width: 108.2%;
     }
     #particles-js .logo img {
         width: 85%;
