@@ -15,17 +15,16 @@ body {
     min-width: auto;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
 }
 nav{
-    height: 6rem;
+    height: 5rem;
     width: 100vw;
-    background-color: rgb(10, 0, 15);
-    /* background-color: #131418c5; */
+    background-color: rgba(10, 0, 15, 0.892);
     box-shadow: 0 3px 20px rgba(0, 0, 0, 0.2);
     display: flex;
     position: fixed;
-    z-index: 1;
-    font-family: 'Poppins';
+    z-index: 100;
 }
 
 /*Styling logo*/
@@ -39,21 +38,22 @@ nav{
 } */
 
 /*Styling Links*/
-.nav-links {
+.nav-links{
     display: flex;
-    list-style: none;
+    list-style: none; 
     width: 88vw;
-    padding: 0px 6.7vw;
+    padding: 0 0.7vw;
     justify-content: space-evenly;
     align-items: center;
     text-transform: uppercase;
-    transform: translateX(283px);
+    transform: translateX(210px);
 }
 .nav-links li a{
     text-decoration: none;
     margin: 0 0.7vw;
-    color: #ffffff;
+    color: #fff;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    
 }
 .nav-links li a:hover {
     color: #61DAFB;
@@ -113,6 +113,7 @@ nav{
         -webkit-clip-path: circle(50px at 90% -10%);
         transition: all 1s ease-out;
         pointer-events: none;
+        transform: none;
     }
     .nav-links.open{
         clip-path: circle(1000px at 90% -10%);
