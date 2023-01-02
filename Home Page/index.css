@@ -212,27 +212,35 @@ section .overlay {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
     font-size: 30px;
 }
-
-.regbtn button {
-    transform: translate(30.5em, 13em);
-    width: 12rem;
-    height: 3rem;
-    font-size: 22px;
-    background-color: transparent;
-    color: #fff;
-    border-width: 3px;
-    border-color: #fff;
-    cursor: pointer;
+.regbtn{
+    z-index: 999;
     font-family: 'Poppins';
+    font-size: 20px;
+    background-color: transparent;
+    width: 30vh;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid #fff;
     border-radius: 20px;
-    z-index: 1;
+    text-align: center;
+    margin-left: 43%;
+    margin-top: 20%;
+    
+}
+.regbtn a {
+    transform: none;
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
 
 }
 
-.regbtn button:hover {
+.regbtn a:hover {
+    color: #000;
+    transition: all 0.5s ease;
+}
+.regbtn:hover {
     background-color: #fff;
-    color: black;
-    transition: 0.5s;
+    transition: all 0.5s ease;
     border-color: #000;
 
 }
