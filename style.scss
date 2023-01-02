@@ -21,84 +21,83 @@ html {
 
 section {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) ,url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
-    min-height: 90vh;
-    width: 100%;
+    min-height: 100vh;
     position: relative;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
- nav {
-    min-height: 10vh;
-    @include flex(center, center, row);
- }
+//  nav {
+//     min-height: 10vh;
+//     @include flex(center, center, row);
+//  }
 
  
-.navbar {
-    @include flex(center, center, row);
-    width: 90%;
-    margin: auto;
+// .navbar {
+//     @include flex(center, center, row);
+//     width: 90%;
+//     margin: auto;
 
    
     
-    .nav-info {
-      @include flex(space-between, center, row);
-       color: white;
-       flex-wrap: wrap;
-       flex: 1 1 auto;
+//     .nav-info {
+//       @include flex(space-between, center, row);
+//        color: white;
+//        flex-wrap: wrap;
+//        flex: 1 1 auto;
        
-//        background: -webkit-linear-gradient(white, #38495a);
-//   -webkit-background-clip: text;
-//   -webkit-text-fill-color: transparent;
+// //        background: -webkit-linear-gradient(white, #38495a);
+// //   -webkit-background-clip: text;
+// //   -webkit-text-fill-color: transparent;
 
 
-       h1 {
-        font-weight: 400;
-        font-size: 1.5rem;
-        cursor: pointer;
-       }
-    }
+//        h1 {
+//         font-weight: 400;
+//         font-size: 1.5rem;
+//         cursor: pointer;
+//        }
+//     }
 
-.logo-cont {
-    flex: 1 1 auto;
-    @include flex(flex-start, center, row);
-}
-    .logo {
-        justify-content: center;
-        align-items: center;
-        height: 10rem;
-        width: 10rem;
-      }
-    img {
-        height: 100%;
-        width: 100%;
-    }
+// .logo-cont {
+//     flex: 1 1 auto;
+//     @include flex(flex-start, center, row);
+// }
+//     .logo {
+//         justify-content: center;
+//         align-items: center;
+//         height: 10rem;
+//         width: 10rem;
+//       }
+//     img {
+//         height: 100%;
+//         width: 100%;
+//     }
 
-    .nav-login {
-        flex: 1 1 auto;
-        @include flex(flex-end, center, row)
+//     .nav-login {
+//         flex: 1 1 auto;
+//         @include flex(flex-end, center, row)
 
-    }
-}
+//     }
+// }
 
 
 
-.nav-btn {
-    background: white;
-    border: 0;
-    font-size: 1.5rem;
-    padding: 1rem 2rem;
-    border-radius: 2.5rem;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    scale: 1;
-    z-index: 2;
-    position: absolute;
-}
-.nav-btn:hover {
-    scale: 1.2;
-    z-index: 2;
-}
+// .nav-btn {
+//     background: white;
+//     border: 0;
+//     font-size: 1.5rem;
+//     padding: 1rem 2rem;
+//     border-radius: 2.5rem;
+//     cursor: pointer;
+//     transition: all 0.3s ease;
+//     scale: 1;
+//     z-index: 2;
+//     position: absolute;
+// }
+// .nav-btn:hover {
+//     scale: 1.2;
+//     z-index: 2;
+// }
 
 main {
     position: absolute;
