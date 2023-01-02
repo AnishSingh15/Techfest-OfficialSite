@@ -11,21 +11,40 @@
     <title>Technical Events</title>
   </head>
   <body>
-    <div class="overlay">
-      <div class="overlayDoor"></div>
-      <div class="overlayContent">
-        <div class="loader">
-          <div class="inner"></div>
-        </div>
-        <div class="skip">SKIP</div>
-      </div>
-    </div>
     <div class="landingpage">
-      <div class="navbar">
+      
         <a class="navlogo" ><img src="/Techfest-OfficialSite/Technical events page/images/Synchronize.png" alt="" style="height:300px;"></a>
-        
+        <h3
+    onclick="document.getElementsByTagName('nav')[0].className = 'menu menu_active'" class="button1"
+  >
+    &lt;menu/&gt;
+  </h3>
+  <nav class="menu">
+    <p onclick="document.getElementsByTagName('nav')[0].className = 'menu'">
+      &lt;close/&gt;
+    </p>
+    <ol>
+      <li class="menu-item"><a href="/Techfest-OfficialSite/Home Page/">Home;</a></li>
+      <li class="menu-item"><a href="/Techfest-OfficialSite/Technical events page/">Technical Events;</a></li>
+      <li class="menu-item">
+        <a href="#0"></a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="/Techfest-OfficialSite/Exhibition/">Exhibition:</a></li>
+          <li class="menu-item"><a href="#0">Workshops:</a></li>
+        </ol>
+      </li>
+      <li class="menu-item">
+        <a href="/Techfest-OfficialSite/Fun events page/">Fun Events;</a>
+        <ol class="sub-menu">
+          <li class="menu-item"><a href="#0">Cultural Events:</a></li>
+          <li class="menu-item"><a href="/Techfest-OfficialSite/Fun events page/">Fun Events:</a></li>
+        </ol>
+      </li>
+      <li class="menu-item"><a href="#0">Guest Lectures;</a></li>
+    </ol>
+  </nav>
     
-      </div>
+      
       <div class="box">
         <div class="infobox">
           <p class="infobox-boldtext">
@@ -280,32 +299,5 @@
       </div>
      
     </div>
-    <script>
-      $(document).ready(function () {
-        // Users can skip the loading process if they want.
-        $(".skip").click(function () {
-          $(".overlay, body").addClass("loaded");
-        });
-      
-        // Will wait for everything on the page to load.
-        $(window).bind("load", function () {
-          $(".overlay, body").addClass("loaded");
-          setTimeout(function () {
-            $(".overlay").css({ display: "none" });
-          }, 20000);
-        });
-      
-        // Will remove overlay after 1min for users cannnot load properly.
-        setTimeout(function () {
-          $(".overlay, body").addClass("loaded");
-        }, 10000);
-      
-        $(window).load(function() {
-          setInterval(function() {
-            $(".loader").fadeOut("slow")
-          }, 10000);
-          });
-      });
-    </script>
   </body>
 </html>
