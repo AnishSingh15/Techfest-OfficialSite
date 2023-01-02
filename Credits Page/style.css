@@ -1,0 +1,35 @@
+body {
+    background: #ffe;
+  }
+  h1 {
+    color: #000;
+    font-size: 48px;
+    text-shadow: 1px 1px #ffe, 3px 3px #0f0;
+    text-align: center;
+  }
+  marquee {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 380px;
+    height: 250px;
+    margin: 0 auto 300px auto;
+    padding: 0 20px;
+    background-color: #000;
+    color: #0f0;
+    border: 1px solid #000;
+    border-radius: 20px;
+    outline: 10px outset #aaa;
+    text-align: center;
+  }
+  li {
+    list-style: none;
+  }
+  .li {
+    margin-left: 110px;
+    list-style: circle;
+    line-height: 15px;
+    text-align: left;
+  }
+  
