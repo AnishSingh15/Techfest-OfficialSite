@@ -162,6 +162,8 @@ nav{
 .toggle .line3{
     transform: rotate(45deg) translate(-5px,-6px);
 }
+
+
 section .overlay {
     position: absolute;
     top: 0;
@@ -582,7 +584,7 @@ section .overlay {
 transform: translateY(102vh);
 padding-left: 2rem;
 float: left;
-/* padding-right: 45rem; */
+padding-right: 45rem;
 font-size: 15px;
 line-height: 2rem;
 font-family: 'Poppins', sans-serif;
