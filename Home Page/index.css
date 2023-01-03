@@ -101,7 +101,7 @@ nav{
         top: 50%;
         transform: translate(-5%, -50%);
         z-index: 2;
-        transition: all 0.7s ease;
+        transition: all 0.2s ease;
     }
     .nav-links{
         position: fixed;
@@ -111,7 +111,7 @@ nav{
         flex-direction: column;
         clip-path: circle(50px at 90% -20%);
         -webkit-clip-path: circle(50px at 90% -10%);
-        transition: all 1s ease-out;
+        transition: all 0.3s ease-out;
         pointer-events: none;
         transform: none;
     }
