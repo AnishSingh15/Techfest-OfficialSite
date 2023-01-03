@@ -74,23 +74,24 @@
                             <h3>
                                <span id="confirm">
                             </h3>
-
+                            <form method="POST" action="https://formspree.io/f/mayvegna">
                             <p>Name *</p>
-                            <input id="txt_name" type="text" Required="required">
+                            <input id="txt_name" name="txt_name" type="text" required="required">
 
-                            <p>Email *</p>
-                            <input id="txt_email" type="text" Required="required">
+                            <p>Email </p>
+                            <input id="txt_email" name="_replyto" type="email" ">
 
                             <p>Phone *</p>
-                            <input id="txt_phone" type="text" Required="required">
+                            <input id="txt_phone" name="txt_phone" type="number" required="required">
 
                             <p>Subject *</p>
-                            <input id="txt_subject" type="text" Required="required">
+                            <input id="txt_subject" name="_subject" type="text" required="required">
 
                             <p>Message *</p>
-                            <textarea id="txt_message" rows="4" cols="20" Required="required" ></textarea>
+                            <textarea id="txt_message" name="message" rows="4" cols="20" required="required" ></textarea>
                             
                             <input type="submit" id="btn_send" value="SEND">
+                        </form>
                         </div>
                     </div>
                 </div>
