@@ -11,7 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 // particlesJS('particles-js',
-particlesJS('particles-js',
+const part =  () =>  particlesJS('particles-js',
   {
     "particles": {
       "number": {
@@ -133,4 +133,52 @@ particlesJS('particles-js',
 
 
 
+barba.init({
+  views: [
+    {
+      namespace: "home",
+      beforeEnter() {
+        part();
+      }
+    },
+    {
+      namespace: "main",
+      beforeEnter() {
+        part();
+      }
+    }
+  ],
+  transitions: [
+    {
+      leave({ current, next}) {
+        let done = this.async();
+        ////Animation
+        const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
+
+        tl.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0 });
+        tl.fromTo(
+          ".swipe",
+          0.75,
+          { x: "-100%" },
+          { x: "0%", onComplete: done },
+          "-=0.2"
+        );
+      },
+      enter({ current, next}) {
+        let done = this.async();
+        ////Animation
+        const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
+        tl.fromTo(
+          ".swipe",
+          1,
+          { x: "0%" },
+    
+          { x: "100%", stagger: 0.23, onComplete: done }
+        );
+        tl.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1 });
+      }
+    }
+  ]
   
+  
+  })

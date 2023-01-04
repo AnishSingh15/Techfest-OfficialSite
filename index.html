@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap" rel="stylesheet">
 </head>
-<body>
-  <section>
+<body data-barba="wrapper">
+  <section >
     <div id="particles-js">   
     <!-- <nav>
         <div class="navbar">
@@ -31,7 +31,7 @@
             </div>
         </div>
     </nav> -->
-     <main>
+     <main data-barba="container" data-barba-namespace="home">
         <div class="main-head">
             <h2>
                 This Sponsers presents <br> 
@@ -48,7 +48,12 @@
     </main>
 </div>
 </section> 
+<div class="swipe swipe1"></div>
+<div class="swipe swipe2"></div>
+<div class="swipe swipe3"></div>
 
+<script src="https://unpkg.com/@barba/core"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="particles.js"></script>
     <script src="app.js"></script>
 </body>
