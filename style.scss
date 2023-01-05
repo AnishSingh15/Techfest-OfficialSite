@@ -22,14 +22,15 @@ body {
 
 
 section {
-    min-height: 100vh;
-    position: relative;
+
 }
 #particles-js {
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) ,url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    position: relative;
 }
 
 
@@ -70,14 +71,6 @@ main {
     
 }
 //////////////////////////////////////////////////////////////////
-
-.particle {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.852)rgba(0, 0, 0, 0.741)) ,url(./6.jpg) !important;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 
 nav {
     min-height: 5vh;
@@ -149,9 +142,17 @@ nav {
     scale: 1.2;
     z-index: 2;
 }
-#firs-sec {
+
+.firs-sec {
     min-height: 95vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.852)rgba(0, 0, 0, 0.741)) ,url(./6.jpg) !important;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
+
+
 
 .hero-container {
   position: absolute;
@@ -479,3 +480,7 @@ background: #b30000;
     background: rgb(255, 139, 93);
     z-index: 3;
   }
+
+
+
+  

@@ -14,17 +14,14 @@ body {
   position: relative;
 }
 
-section {
-  min-height: 100vh;
-  position: relative;
-}
-
 #particles-js {
   background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0.4))), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
   background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
+  min-height: 100vh;
+  position: relative;
 }
 
 main {
@@ -73,14 +70,6 @@ main {
   border-radius: 2.5rem;
   cursor: pointer;
   scale: 1;
-}
-
-.particle {
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.852))), url(./6.jpg) !important;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.852) rgba(0, 0, 0, 0.741)), url(./6.jpg) !important;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 nav {
@@ -220,8 +209,14 @@ nav {
   z-index: 2;
 }
 
-#firs-sec {
+.firs-sec {
   min-height: 95vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.852))), url(./6.jpg) !important;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.852) rgba(0, 0, 0, 0.741)), url(./6.jpg) !important;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
 }
 
 .hero-container {

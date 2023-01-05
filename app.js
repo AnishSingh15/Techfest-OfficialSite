@@ -131,21 +131,13 @@ const part =  () =>  particlesJS('particles-js',
 
 );
 
-
-
 barba.init({
   views: [
     {
-      namespace: "home",
-      beforeEnter() {
-        part();
-      }
+      namespace: "home"
     },
     {
-      namespace: "main",
-      beforeEnter() {
-        part();
-      }
+      namespace: "main"
     }
   ],
   transitions: [
