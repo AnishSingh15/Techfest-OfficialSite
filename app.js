@@ -131,13 +131,34 @@ const part =  () =>  particlesJS('particles-js',
 
 );
 
+function containerAnimation() {
+  const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
+  
+  tl.from(".particle", {
+    duration: 2,
+    opacity: 0,
+    delay: 0.2
+  })
+  .to(".hero", {
+    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
+    y: 0,
+    duration: 1
+  }, "-=0.3")
+  
+  }
+  
+
+
 barba.init({
   views: [
     {
       namespace: "home"
     },
     {
-      namespace: "main"
+      namespace: "main",
+      beforeEnter() {
+        containerAnimation();
+      }
     }
   ],
   transitions: [
@@ -145,7 +166,7 @@ barba.init({
       leave({ current, next}) {
         let done = this.async();
         ////Animation
-        const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut" }});
 
         tl.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0 });
         tl.fromTo(
@@ -159,7 +180,7 @@ barba.init({
       enter({ current, next}) {
         let done = this.async();
         ////Animation
-        const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
+        const tl = gsap.timeline({ defaults: { ease: "power2.inOut" }});
         tl.fromTo(
           ".swipe",
           1,
