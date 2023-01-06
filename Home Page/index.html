@@ -7,83 +7,75 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>SynChronize - Home</title>
   <link rel="icon" href="./assets/iconlogo.ico" type="image/x-icon">
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <nav>
-    <div class="navbar">
-        <div class="logo-cont">
-            <div class="logo">
-                <img src="../LOGOFINAL.png" alt="">
-            </div>
+    <section>
+      <div class="overlay"></div>
+      <div id="particles-js">
+        <!-- Navbar -->
+        
+        <nav>
+          <div class="hamburger">
+              <div class="line1"></div>
+              <div class="line2"></div>
+              <div class="line3"></div>
+          </div>
+          <ul class="nav-links">
+              <li><a href="../Technical events page/index.html">Technical Events</a></li>
+              <li><a href="../Fun events page/index.html">Fun Events</a></li>
+              <li><a href="../Workshop/index.html">Workshop</a></li>
+              <li><a href="#">Guest Lectures</a></li>
+              <li><a href="../Exhibition/index.html">Exhibitions</a></li>
+             <li><a href="#">Cultural Events</a></li>
+      
+          </ul>
+      </nav>
+        <div class="logo"><img src="./assets/Synchronize.png" alt=""></div>
+        <div class="slogan">
+          <h4>"The Mystery of Incompatible Truths"</h4>
         </div>
-        <div class="nav-info">
-            <h1>Technical events</h1>
-            <h1>Fun events</h1>
-            <h1>Workshop</h1>
-            <h1>Guest Lectures</h1>
-            <h1>Exhibiton</h1>
-            <h1>Pro shows</h1>
+        <div class="dates">
+          <h3>20-22 January</h3>
         </div>
-        <div class="nav-login">
-            <button class="nav-btn">Register</button>
+        <div class="regbtn">
+          <a href="#"><button>Register Now</button></a>
         </div>
-    </div>
-</nav>
-  <section id="particles-js">
-    <div class="particle">
-      <div class="hero-container">
-        <div class="hero">
-      <div class="img-container">
-        <img src="../Home Page/assets/Synchronize.png" alt="">
-      </div>   
-      <div class="slogan">
-        <h1>"THE MYSTERY OF INCOMPATIBLE TRUTHS"</h1>
+        <!-- particles-js file -->
+        <script type="text/javascript" src="js/particles.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script src="../Home Page/js/nav.js"></script>
       </div>
-      <div class="date">
-        <h2>20-22 JANUARY</h2>
-      </div>
-      <div class="register-btn">
-        <button>Register Now</button>
-      </div>
-    </div>
-    </div>
-</div>
-</section> 
-
-
-    <div class="about">
-      <div class="about-container">
+    </section>
+    <div id="about">
       <h2>About/> SynChronize 2K23</h2>
       <div class="content">
         <p>SynChronize is the university's first
-          ever technical fest with a <br> multitude
+          ever technical fest with a multitude
           of events planned over a span of
-          three days, wherein <br> students from
+          three days, wherein students from
           our university (as well as from other
-          institutes) may <br> take part in events
+          institutes) may take part in events
           like coding contests, technical
-          workshops, <br> guest lectures, and
+          workshops, guest lectures, and
           more.
         </p> <br>
         <p>
           With the series of planned events
-          and curriculum, the organizing <br> team
+          and curriculum, the organizing team
           expects a hearty participation of
-          over 3k students, and aims <br> for this
+          over 3k students, and aims for this
           to be a big success as well as a
-          fruitful experience for all <br> the
+          fruitful experience for all the
           participants.
 
         </p>
       </div>
     </div>
-    </div> 
-    <div class="cards-container">
     <div class="planned-events">
-      <h2 id="plan">PLANNED EVENTS</h2>
+      <h3>PLANNED EVENTS</h3>
       <section class="card-container">
         <div class="card">
           <div class="card-image car-1">
@@ -157,7 +149,6 @@
 
       </section>
     </div>
-  </div>
     <!-- <div class="sponsors-container">
       <h3>OUR SPONSORS</h3>
     </div> -->
@@ -187,12 +178,11 @@
         Copyright &copy; SynChronize 2023
       </p>
     </section>
+ 
 
-<!-- <script src="https://unpkg.com/@barba/core"></script> -->
+
+<script src="https://unpkg.com/@barba/core"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js" integrity="sha512-gmwBmiTVER57N3jYS3LinA9eb8aHrJua5iQD7yqYCKa5x6Jjc7VDVaEA0je0Lu0bP9j7tEjV3+1qUm6loO99Kw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script src="../particles.js"></script>
-<script src="../app.js"></script>
-
 </body>
 
 </html>

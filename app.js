@@ -11,7 +11,7 @@ particlesJS.load('particles-js', 'particles.json', function() {
 
 /* Otherwise just put the config content (json): */
 // particlesJS('particles-js',
-const part =  () =>  particlesJS('particles-js',
+particlesJS('particles-js',
   {
     "particles": {
       "number": {
@@ -131,73 +131,6 @@ const part =  () =>  particlesJS('particles-js',
 
 );
 
-const containerAnimation = () => {
-  const tl = gsap.timeline({ defaults: { ease: "power2.out" }});
-  
-  tl.from(".particle", {
-    duration: 2,
-    opacity: 0,
-    delay: 0.2
-  })
-  .to(".hero", {
-    clipPath: "polygon(0 0, 100% 0, 100% 100%, 0 100%)",
-    y: 0,
-    duration: 1
-  }, "-=0.3")
-  
-  }
-  containerAnimation();
-  part();
-  
-// const exploreBtn = document.querySelector("#ai");
 
 
-// barba.init({
-//   views: [
-//     {
-//       namespace: "home",
-//       beforeEnter() {
-//         exploreBtn.href = "./Home Page/index.html"
-//       }
-//     },
-//     {
-//       namespace: "main",
-//       beforeEnter() {
-//         containerAnimation();
-//       }
-//     }
-//   ],
-//   transitions: [
-//     {
-//       leave({ current, next}) {
-//         let done = this.async();
-//         ////Animation
-//         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" }});
-
-//         tl.fromTo(current.container, 1, { opacity: 1 }, { opacity: 0 });
-//         tl.fromTo(
-//           ".swipe",
-//           0.75,
-//           { x: "-100%" },
-//           { x: "0%", onComplete: done },
-//           "-=0.2"
-//         );
-//       },
-//       enter({ current, next}) {
-//         let done = this.async();
-//         ////Animation
-//         const tl = gsap.timeline({ defaults: { ease: "power2.inOut" }});
-//         tl.fromTo(
-//           ".swipe",
-//           1,
-//           { x: "0%" },
-    
-//           { x: "100%", stagger: 0.23, onComplete: done }
-//         );
-//         tl.fromTo(next.container, 1, { opacity: 0 }, { opacity: 1 });
-//       }
-//     }
-//   ]
   
-  
-//   })
