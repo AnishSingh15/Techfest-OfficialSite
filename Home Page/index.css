@@ -165,25 +165,26 @@ nav{
 }
 
 
-section .overlay {
+/* section .overlay {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     min-height: 90vh;
-    background-image: url(./assets/6.jpg);
+   
     background-size: cover;
-}
+} */
 
 #particles-js {
-
+    background-image: url(./assets/6.jpg);
     background-size: cover;
     height: 90vh;
     position: absolute;
     overflow: hidden;
     align-items: center;
     background-size: cover;
-    background: rgba(0, 0, 0, 0.844);
+    z-index: 1;
+    
 
 
 }
