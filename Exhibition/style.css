@@ -15,7 +15,7 @@ body {
     list-style-type: none;
     font-style: normal;
   }
-  
+
   body {
     height: 100vh;
   }
@@ -153,6 +153,7 @@ body {
     white-space: nowrap;
 }
 
+
 .page-heading-primary {
     display: block;
     font-size: 3.125rem;
@@ -178,35 +179,76 @@ body {
     background-color: #191919;
 }
 
-.page-content img {
-    height: auto;
-    width: 430px;
-}
 
-.page-content-text {
-    width: 550px;
-}
+
 
 .main {
     width: 1130px;
     max-width: 95%;
-    margin: 0 auto;
+    margin: auto;
     display: flex;
     align-items: center;
     justify-content: space-around;
+    flex: 1 1 20rem;
+    flex-wrap: wrap;
+}
+
+.img-cont {
+  max-width: 25rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex: 1 1 20rem;
+  margin: 0 1rem;
+  order: 2;
+}
+
+.img-cont img {
+  width: 100%;
+  height: auto;
+}
+.page-content-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 20rem;
+  flex-direction: column;
+  order: 1;
 }
 
 .page-content-text h2 {
     color: white;
-    font-size: 75px;
     text-transform: capitalize;
     margin-bottom: 20px;
+    --min: 2.5em;   /* minimum value */
+    --val: 5vw;     /* preferred value = 4% viewport width */
+    --max: 5rem;
+    padding-top: 1rem;
+    position: relative;
+    padding-bottom: 0.5rem;
+}
+.page-content-text h2::after {
+  content: '';
+  height: 0.3rem;
+  width: 60%;
+  border-radius: 2rem;
+  background-color: rgb(228, 172, 69);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - 31%);
+}
+h2, p {
+  font-size: clamp(var(--min), var(--val), var(--max));
 }
 
 .page-content-text p {
     color: #fcfc;
     letter-spacing: 1px;
     line-height: 28px;
-    font-size: 18px;
     margin-bottom: 45px;
+    --min: 1rem;   /* minimum value */
+    --val: 3vw;     /* preferred value = 4% viewport width */
+    --max: 1.2rem;
+    padding: 0 1rem;
+    text-align: start;
 }
