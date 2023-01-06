@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Cardo:400i|Rubik:400,700&display=swap");
 
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 
@@ -17,21 +17,29 @@ html {
 .body1 {
     position: relative;
     height: 60vh;
-    background-image: url(image1.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./image1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
+   max-width: 100%;
+   width: 100%;
 }
 
 
 svg {
-    position: absolute;
-    top: 50%;
-    left: 60%;
-    transform: translate(-50%, -50%);
+ width: 100%;
+ position: absolute;
+ top: 50%;
+ left: 70%;
+ transform: translate(-50%, -70%);
 }
 
+
 text {
-    font-size: 8rem;
+    font-size: clamp(var(--min), var(--val), var(--max));
+    --min: 2em;   /* minimum value */
+    --val: 7vw;     /* preferred value = 4% viewport width */
+    --max: 9rem;
     stroke: #cd1818;
     stroke-width: 2px;
     stroke-dasharray: 1000;
