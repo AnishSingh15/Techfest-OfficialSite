@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body {
     margin: 0;
     padding: 0;
@@ -246,9 +247,12 @@ h2, p {
     letter-spacing: 1px;
     line-height: 28px;
     margin-bottom: 45px;
+    margin-top: 30px;
     --min: 1rem;   /* minimum value */
     --val: 3vw;     /* preferred value = 4% viewport width */
     --max: 1.2rem;
     padding: 0 1rem;
     text-align: start;
+    font-family: 'Poppins';
+    
 }
