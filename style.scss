@@ -11,93 +11,24 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
-    overflow: hidden;
 }
 html {
     font-size: 62.5%;
 }
 
-
-
-section {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) ,url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
-    min-height: 100vh;
+body {
     position: relative;
-    background-position: center;
+}
+
+#particles-js {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)) ,url(./shubham-dhage-ykFTt5Dq1RU-unsplash.jpg);
+    background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
+    position: relative;
 }
-//  nav {
-//     min-height: 10vh;
-//     @include flex(center, center, row);
-//  }
 
- 
-// .navbar {
-//     @include flex(center, center, row);
-//     width: 90%;
-//     margin: auto;
-
-   
-    
-//     .nav-info {
-//       @include flex(space-between, center, row);
-//        color: white;
-//        flex-wrap: wrap;
-//        flex: 1 1 auto;
-       
-// //        background: -webkit-linear-gradient(white, #38495a);
-// //   -webkit-background-clip: text;
-// //   -webkit-text-fill-color: transparent;
-
-
-//        h1 {
-//         font-weight: 400;
-//         font-size: 1.5rem;
-//         cursor: pointer;
-//        }
-//     }
-
-// .logo-cont {
-//     flex: 1 1 auto;
-//     @include flex(flex-start, center, row);
-// }
-//     .logo {
-//         justify-content: center;
-//         align-items: center;
-//         height: 10rem;
-//         width: 10rem;
-//       }
-//     img {
-//         height: 100%;
-//         width: 100%;
-//     }
-
-//     .nav-login {
-//         flex: 1 1 auto;
-//         @include flex(flex-end, center, row)
-
-//     }
-// }
-
-
-
-// .nav-btn {
-//     background: white;
-//     border: 0;
-//     font-size: 1.5rem;
-//     padding: 1rem 2rem;
-//     border-radius: 2.5rem;
-//     cursor: pointer;
-//     transition: all 0.3s ease;
-//     scale: 1;
-//     z-index: 2;
-//     position: absolute;
-// }
-// .nav-btn:hover {
-//     scale: 1.2;
-//     z-index: 2;
-// }
 
 main {
     position: absolute;
@@ -106,6 +37,8 @@ main {
     transform: translate(-50%, -50%);
 }
 .main-head {
+    @include flex(center, center, column);
+    text-align: center;
 
     h2 {
   background: -webkit-linear-gradient(rgb(231, 231, 231), #394a5a);
@@ -121,17 +54,21 @@ main {
         width: 80%;
     }
 }
-.register-cont {
-    @include flex(center, center, row)
+.explore-cont {
+    width: 10vw;
+    height: 3.5vw;
 }
-    .register-btn {
+    .explore-btn {
         background: white;
         border: 0;
-        font-size: 1.8rem;
-        padding: 1.2rem 2.2rem;
+        font-size: 1.3vw;
+        width: 100%;
+        height: 100%;
         border-radius: 2.5rem;
         cursor: pointer;
         scale: 1;
     }
     
 }
+//////////////////////////////////////////////////////////////////
+
