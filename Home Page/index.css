@@ -187,7 +187,10 @@ section .overlay {
 
 
 }
-
+.logo{
+    display: block;
+    margin: auto;
+}
 #particles-js .logo img {
     width: 50%;
     /* margin-left: 26%; */
@@ -215,7 +218,10 @@ section .overlay {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serifs;
     font-size: 30px;
 }
-
+.regbtn{
+    display: block;
+    margin: auto;
+}
 .regbtn button {
     transform: translate(30.5em, 13em);
     width: 12rem;
@@ -476,11 +482,15 @@ section .overlay {
         overflow-x: hidden;
     }
     section .overlay{
-        width: 100%;
+        width: auto;
     }
     #particles-js{
-        width: 100%;
+        width: auto;
         background: linear-gradient(rgb(10, 0, 15),rgb(10,0,19))
+    }
+    .logo{
+        display: block;
+        margin: auto;
     }
     #particles-js .logo img {
         width: 100%;
