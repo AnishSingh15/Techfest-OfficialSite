@@ -138,6 +138,7 @@ nav{
 }
 .logo {
     max-width: 90%;
+    z-index: -120;
 }
 #particles-js .logo img {
     width: 100%;
