@@ -191,7 +191,9 @@ p {
     font-size: 1.4rem;
   }
   .navlogo img{
-    top:20%;
+    top:10%;
+    width: 85%;
+    text-align: center;
   }
 
 }
