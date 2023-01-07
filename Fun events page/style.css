@@ -190,6 +190,10 @@ p {
     left: 70%;
     font-size: 1.4rem;
   }
+  .navlogo img{
+    top:20%;
+  }
+
 }
 
 #stars {

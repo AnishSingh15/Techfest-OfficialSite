@@ -251,6 +251,9 @@ a {
     left: 69%;
     font-size: 1.4rem;
   }
+  .navlogo img{
+    margin-top:-10%;
+  }
 }
 
 .box .infobox {
