@@ -16,7 +16,7 @@ html {
 
 .body1 {
     position: relative;
-    height: 60vh;
+    min-height: 100vh;
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.4)), url(./image1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -40,12 +40,13 @@ text {
     --min: 2em;   /* minimum value */
     --val: 7vw;     /* preferred value = 4% viewport width */
     --max: 9rem;
-    stroke: #cd1818;
-    stroke-width: 2px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    fill: transparent;
+    stroke: #69ff04;
+    stroke-width: 3px;
+    stroke-dasharray: 100;
+    stroke-dashoffset: 100;
+    fill: wheat;
     animation: dash 5s ease-out alternate infinite;
+    text-align: center;
 }
 
 @keyframes dash {
@@ -77,12 +78,12 @@ text {
     display: grid;
     place-items: center;
     background-color: rgb(0, 0, 0);
-    width: 100%;
+    width: 100vh;
 }
 
 .page-content {
     display: grid;
-    grid-gap: 3rem;
+    /* grid-gap: 3rem; */
     padding: 1rem;
     max-width: 1024px;
     margin: 0 auto;
@@ -107,7 +108,7 @@ text {
     align-items: flex-end;
     overflow: hidden;
     padding: 1rem;
-    width: 100%;
+    width: 25rem;
     text-align: center;
     color: whitesmoke;
     background-color: whitesmoke;
@@ -148,7 +149,8 @@ text {
 }
 
 .card:nth-child(1):before {
-    background-image: url(trail.jpg);
+    background-image: url('https://i.ibb.co/J3xkZBC/Algo-Rythm-2.png');
+    background-size: cover;
 }
 
 .card:nth-child(2):before {
