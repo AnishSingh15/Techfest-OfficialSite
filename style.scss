@@ -61,32 +61,38 @@ a {
     letter-spacing: 2px; 
     text-decoration: none;
     border-radius: 40px;
-    background: rgba(0, 0, 0, 0.2);
+    background: rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #fff;
+    color: black;
 }
 
 
 
-span {
-position: absolute;
-background: #fff;
-transform: translate(-50%, -50%);
-pointer-events: none; 
-border-radius: 50%;
-animation: animate 1s linear infinite;
-}
+// span {
+// position: absolute;
+// background: #fff;
+// transform: translate(-50%, -50%);
+// pointer-events: none; 
+// border-radius: 50%;
+// animation: animate 1s linear infinite;
+// }
 
-@keyframes animate {
-    0% {
-        width: 0;
-        height: 0;
-        opacity: 0.2;
-    }
-    100% {
-        width: 500px;
-        height: 500px;
-        opacity: 0;
-    }
-}
+// @keyframes animate {
+//     0% {
+//         width: 0;
+//         height: 0;
+//         opacity: 0.2;
+//     }
+//     100% {
+//         width: 500px;
+//         height: 500px;
+//         opacity: 0;
+//     }
+// }
 //////////////////////////////////////////////////////////////////
 
 
