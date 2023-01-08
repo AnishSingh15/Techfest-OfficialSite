@@ -92,5 +92,7 @@ a:hover {
     margin-top: 5vh;
     margin-bottom: 5vh;
   }
-  
+  #particles-js{
+    position: unset;
+  }
 }

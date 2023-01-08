@@ -1,11 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 body {
-    background: #ffe;
+    background: rgb(31, 3, 43);
+    font-family: 'Poppins';
+  }
+  .logo-cont{
+    transform: translateX(27%);
   }
   h1 {
     color: #000;
     font-size: 48px;
     text-shadow: 1px 1px #ffe, 3px 3px #0f0;
     text-align: center;
+    letter-spacing: 0.5rem;
+  }
+  h3{
+    text-decoration: underline;
   }
   marquee {
     position: absolute;
@@ -31,4 +40,19 @@ body {
     list-style: circle;
     line-height: 15px;
     text-align: left;
+  }
+  @media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    html{
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+    .logo-cont{
+      width: 90vh;
+      transform: translateX(3.5vh);
+      margin-top: 50px;
+    }
+    h1{
+      font-size: 40px;
+    }
   }
