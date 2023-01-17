@@ -13,7 +13,7 @@ body {
   max-width: 100%;
   overflow-y: auto;
   overflow-x: hidden;
-  background-color: #1f1d2b;
+  background-color: rgb(10, 0, 25);
 }
 .landingpage::before {
   content: "";
@@ -932,7 +932,7 @@ section.footer{
   }
   body {
       width: 100%;
-      min-height: 100vh;
+      min-height: 100%;
       display: flex;
       flex-direction: column;
       padding: 0;
@@ -946,9 +946,123 @@ section.footer{
       background-color: rgb(15, 12, 12);
       transform: translateY(57rem);
   }
-
+  .landingpage{
+    min-height: 100%;
+  }
 
 }
 
 
 
+.popup {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 320px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  border: 3px solid #F04A49;
+  z-index: 20;
+}
+
+#popup:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popup:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
+
+/* Styling buttons & webpage */
+
+
+
+button {
+  cursor: pointer;
+  background-image: linear-gradient(190deg, #f83600 0%, #fee140 100%);
+  color: #fff;
+  width: 180px;
+  text-align: center;
+  font-size:16px;
+  padding: 10px 0;
+  margin: 0 auto;
+  transition:background-image 3s ease-in-out;
+  margin-bottom: 30px;
+    
+}
+
+button:hover {
+  transition:background-image 3s ease-in-out;
+  background-image: linear-gradient(90deg, #fee140 0%, #f83600 100%);
+}
+
+
+
+
+.popupk {
+  display: none;
+  position: fixed;
+  padding: 10px;
+  width: 280px;
+  left: 50%;
+  margin-left: -150px;
+  height: 180px;
+  top: 50%;
+  margin-top: -100px;
+  background: #FFF;
+  border: 3px solid #F04A49;
+  z-index: 20;
+}
+
+#popupk:after {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0,0,0,0.5);
+  z-index: -2;
+}
+
+#popupk:before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #FFF;
+  z-index: -1;
+}
+
+/* Styling buttons & webpage */
+
+
+
+
+p {
+	margin: 1em 0;
+  font-size: 16px;
+}
+.popup p{
+  color: #4b4c4d;
+}
